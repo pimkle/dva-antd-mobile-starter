@@ -11,7 +11,6 @@ function Main({
 }) {
   return (
     <div className={styles.normal}>
-      <Header location={location} />
       <Footer location={location} childrens={children} />
     </div>
   );

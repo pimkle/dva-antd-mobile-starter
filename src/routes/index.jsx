@@ -4,19 +4,25 @@ import {
   connect
 } from 'dva';
 
+import {
+  getScreenHeight
+} from './../utils/tools.js';
 import styles from './index.less';
 
 function Index({
   location
 }) {
   return (
-    <div className={styles.normal}>
-      <h1 className={styles.title}>Yay! Welcome to dva!</h1>
-      <div className={styles.welcome} />
-      <ul className={styles.list}>
-        <li>To get started, edit <code>src/index.js</code> and save to reload.</li>
-        <li><a href="https://github.com/dvajs/dva-docs/blob/master/v1/en-us/getting-started.md">Getting Started</a></li>
-      </ul>
+    <div className={styles.fixed_wrapper}>
+      <div className={styles.scoll_wrapper}>
+        <div className={styles.label_logo}></div>
+
+        <div className={styles.one_screen} style={{height: getScreenHeight()}}>
+          <div className={styles.div_shine}></div>
+        </div>
+
+        <br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/>
+      </div>
     </div>
   );
 }
